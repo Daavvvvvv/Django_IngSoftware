@@ -59,7 +59,7 @@ def signup(request):
             user.save()
             token = Token.objects.create(user=user)
             return JsonResponse({'token': str(token)}, status=201)
-        except:
+        except IntegrityError:
             return JsonResponse({'error': 'User already exists'}, status=400)
 
 @csrf_exempt
