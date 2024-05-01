@@ -7,10 +7,10 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Install Flask
-RUN pip install -r requirements.txt
+RUN pip install Flask==3.0.0
 
 # Expose the required port
 EXPOSE 8080
 
 # Specify the command to run the Flask app
-CMD ["python", "randomquotes.py"]
+CMD ["python", "RandomQuotes.py"]
