@@ -13,4 +13,4 @@ RUN pip install Flask==3.0.0
 EXPOSE 8080
 
 # Specify the command to run the Flask app
-CMD ["python", "RandomQuotes.py"]
+CMD ["python", "randomquotes.py"]
